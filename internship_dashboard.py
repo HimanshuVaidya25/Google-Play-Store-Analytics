@@ -47,7 +47,7 @@ ax.legend()
 ist=pytz.timezone('Asia/Kolkata')
 now=datetime.now(ist)
 
-if 13<=now.hour<15:
+if 15<=now.hour<17:
     st.pyplot(fig)
 else:
     st.warning("This chart is visible only between 3Pm and 5PM IST")
