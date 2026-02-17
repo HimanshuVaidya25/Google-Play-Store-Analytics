@@ -54,6 +54,8 @@ if task_choice == "Task 1":
 
     if 15 <= current_time.hour < 17:
         st.pyplot(fig)
+    else:
+        st.warning("Task 1 visualization is available between 3 PM and 5 PM IST.")
 
  
     #if 0 <= current_time.hour < 24:   
@@ -91,7 +93,8 @@ if task_choice == "Task 2":
 
     if 13 <= current_time.hour < 14:
         st.pyplot(fig)
-
+    else:
+        st.warning("Task 2 visualization is available between 1 PM and 2 PM IST.")
     
     #if 0 <= current_time.hour < 24:   # TEST MODE
     # st.pyplot(fig)
@@ -115,6 +118,8 @@ if task_choice == "Task 3":
 
     if 18 <= current_time.hour < 20:
         st.plotly_chart(fig)
+    else:
+        st.warning("Task 3 visualization is available between 6 PM and 8 PM IST.")
 
     
 
@@ -132,6 +137,8 @@ if task_choice == "Task 4":
     pivot.plot.area(figsize=(10,5))
     if 16 <= current_time.hour < 18:
         st.pyplot(plt)
+    else:
+        st.warning("Task 4 visualization is available between 4 PM and 6 PM IST.")
 
 
 if task_choice == "Task 5":
@@ -151,6 +158,8 @@ if task_choice == "Task 5":
 
     if 17 <= current_time.hour < 19:
         st.pyplot(fig)
+    else:
+        st.warning("Task 5 visualization is available between 5 PM and 7 PM IST.")
 
 
 if task_choice == "Task 6":
@@ -166,3 +175,6 @@ if task_choice == "Task 6":
     trend.plot(figsize=(10,5))
     if 18 <= current_time.hour < 21:
         st.pyplot(plt)
+    else:
+        st.warning("Task 6 visualization is available between 6 PM and 9 PM IST.")
+        
